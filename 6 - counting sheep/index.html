@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // for
+        // initValue
+        // if  == true add it else not do that
+        // adding to initvalue
+        function counts(array) {
+            let initVlaue = 0;
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] == true) {
+                    initVlaue = initVlaue + array[i];
+
+                }
+            }
+            return initVlaue;
+        }
+
+
+        x = [true, true, true, true, false, false, false, true, true, true, true, ]
+        console.log(counts(x))
+    </script>
+</body>
+
+</html>

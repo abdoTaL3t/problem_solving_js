@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // check if empty vale return 0
+        // find the heighest Number 
+        // find the lowest number 
+        // filter the array 
+        // sum all numbners in array 
+
+        // function sum(array) {
+        //     if (array == null) {
+        //         return 0;
+        //     }
+        //     let x = array.filter(function(e) {
+        //         return e !== Math.max(...array) && e !== Math.min(...array)
+        //     }).reduce(function(acc, current) {
+        //         return acc + current;
+        //     })
+        //     console.log(x)
+
+        // }
+        function sum(array) {
+            if (array == null) {
+                return 0;
+            }
+            return array.sort((a, b) => a - b).slice(1, -1).reduce(function(a, b) {
+                return a + b;
+            });
+
+        }
+        console.log(sum([1, 2, 3, 4, 5, 6, 7]));
+    </script>
+</body>
+
+</html>
